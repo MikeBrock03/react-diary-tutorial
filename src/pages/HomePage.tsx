@@ -8,7 +8,7 @@ import {
   IonToolbar,
 } from '@ionic/react';
 import React, { useEffect, useState } from 'react';
-import {firestore} from '../firebase';
+import { firestore } from '../firebase';
 
 const HomePage: React.FC = () => {
   const [entries, setEntries]=useState([]);
