@@ -3,3 +3,7 @@ export interface Entry {
     title: string;
     description: string;
 }
+
+export function toEntry(doc): Entry {
+    return {id:doc.id, ...doc.data()};
+}
