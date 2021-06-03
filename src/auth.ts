@@ -11,7 +11,7 @@ interface AuthInit {
     auth?: Auth;
 }
 
-export const AuthContext = React.createContext<Auth>({loggedIn: false})
+export const AuthContext = React.createContext<Auth>({loggedIn: true})
 
 export function useAuth(): Auth {
     return useContext(AuthContext);
@@ -23,7 +23,7 @@ export function useAuthInit(): AuthInit{
       return firebaseAuth.onAuthStateChanged((firebaseUser) => {
         const auth = firebaseUser ?
             {loggedIn: true, userId: firebaseUser.uid}:
-            {loggedIn: false};
+            {loggedIn: true};
         setAuthInit ({loading: false, auth});
     }); 
       }, []);

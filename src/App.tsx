@@ -35,7 +35,7 @@ console.log('rendering App with auth: ', auth);
           <Route>
             <NotFoundPage/>
           </Route>
-          <Redirect exact from="/" to="/my/entries"/>
+          <Redirect exact from="/" to="/login"/>
         </Switch>
       </IonReactRouter>
       </AuthContext.Provider>
