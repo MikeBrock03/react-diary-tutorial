@@ -1,9 +1,3 @@
-# Daily Moments
+# React Diary
 
-This example is part of the Ionic React course.
-
-## Links
-
- * [Firebase: Get Started](https://firebase.google.com/docs/web/setup)
- * [Firebase Authentication](https://firebase.google.com/docs/auth)
- * [Cloud Firestore](https://firebase.google.com/docs/firestore)
+Using React and Firebase to create a photo-based diary, part of a React tutorial.
